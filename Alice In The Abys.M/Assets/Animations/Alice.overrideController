@@ -8,14 +8,4 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Alice
   m_Controller: {fileID: 9100000, guid: 3978bface3e374a91b3f9ff70d5eabe8, type: 2}
-  m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: ded1ac682c89044339fd91186fb32457, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 27f303b70e2cb3a43a40f81efb110095, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: e3da2ba029d464b1ca89a64aed141fbc, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 3efe454714cab35459bb6b9b2284dc55, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: bdaef41593b794d0a8f7643ca148e9cf, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 99f82abee879f094cbc5eda3b2f0ef80, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 38b425a2657a24b13a667eb3425dbcc1, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 27f303b70e2cb3a43a40f81efb110095, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 9aeabefb987264c10963b8e1880e11cc, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 3efe454714cab35459bb6b9b2284dc55, type: 2}
+  m_Clips: []
