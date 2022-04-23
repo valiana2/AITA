@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzle.unity
     guid: 8dd5c3900e4ab864fafce8824d5a61d3
+  - enabled: 1
+    path: "Assets/Scenes/R\xE9ponsePuzzle.unity"
+    guid: e6505a996f276b840b749170a2840667
   m_configObjects: {}
