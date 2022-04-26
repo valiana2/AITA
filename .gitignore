@@ -23,8 +23,6 @@
 ExportedObj/
 .consulo/
 *.csproj
-*.unityproj
-*.sln
 *.suo
 *.tmp
 *.user
@@ -44,7 +42,6 @@ ExportedObj/
 
 *.apk
 *.aab
-*.unitypackage
 *.app
 
 
