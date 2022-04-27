@@ -56,6 +56,7 @@
      <Compile Include="Assets\Script\Menu\VolumeSlider.cs" />
      <Compile Include="Assets\Script\Déplacement\GameController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Script\AccestoGame\SwitchScenee.cs" />
      <Compile Include="Assets\Script\Quizz\Quizz.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
@@ -94,7 +95,6 @@
      <Compile Include="Assets\Script\Chargement\LevelLoader.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\Script\AccestoGame\SwitchScenee.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ImportDécor\Shaders\Cutscene.shader" />
