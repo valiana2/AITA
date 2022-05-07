@@ -88,7 +88,7 @@ public class Claviervirtuel : MonoBehaviour
 
             if(i == 6)
             {
-               PanelEnd.SetActive(true);
+                PanelEnd.SetActive(true);
                 PanelEnd.GetComponentInChildren<Text>().text = "Dommage ! le mot était " + curWord;
             }
         }
