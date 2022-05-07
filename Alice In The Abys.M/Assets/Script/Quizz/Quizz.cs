@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Quizz : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Quizz : MonoBehaviour
     private TextMesh TxtBtnG;
     private TextMesh TxtBtnD;
     private int NbQuestion = 0;
+    public GameObject Panel;
 
     string[] Quiz = new string[3];
 
@@ -24,7 +26,7 @@ public class Quizz : MonoBehaviour
         TxtScore = GameObject.Find("Score").GetComponent<Text>();
         TxtBtnG = GameObject.Find("Réponse1").GetComponent<TextMesh>();
         TxtBtnD = GameObject.Find("Réponse2").GetComponent<TextMesh>();
-        Quiz[0] = "Comment s'apelle le lapin à sauver ?,Magouille,Gribouille,Gribouille";
+        Quiz[0] = "Comment s'apelle le lapin à sauver ?,Gribouille,Magouille,Gribouille";
         Quiz[1] = "Comment s'apelle la personne qui vous as guider jusqu'au jeu ?,Dumbo,Mytho,Mytho";
         Quiz[2] = "Combien de personnes as tu rencontrer jusqu'ici ?,2,3,3";
 
@@ -35,6 +37,12 @@ public class Quizz : MonoBehaviour
     void Update()
     {
         TxtScore.text = "Score : " + Score;
+    }
+
+    IEnumerator WaitOneFrame(float t) 
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("Indice1");
     }
 
     public void PoseUneQuestion()
@@ -48,10 +56,22 @@ public class Quizz : MonoBehaviour
             TxtBtnD.text = Col[2];
             Réponses = Col[3];
             Nr += 1;
+            
         }
-        else
+        else 
         {
-            Debug.Log("Partie terminé");
+            if(Score == 3)
+            {
+                Panel.SetActive(true);
+                Panel.GetComponentInChildren<Text>().text = "Bravo ! Tu obtiens l'indice";
+                StartCoroutine(WaitOneFrame(2f));
+            }
+            
+            else
+            {
+                Panel.SetActive(true);
+                Panel.GetComponentInChildren<Text>().text = "Dommage tu as échoué";
+            }
         }
        
     }

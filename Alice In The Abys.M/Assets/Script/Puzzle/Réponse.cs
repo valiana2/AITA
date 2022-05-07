@@ -11,6 +11,8 @@ public class Réponse : MonoBehaviour
     [SerializeField]
     string s = " ";
     bool endGame = false;
+    public GameObject Panel;
+
 
     private void Start() 
     {
@@ -21,8 +23,14 @@ public class Réponse : MonoBehaviour
     {
         endGame = false;
         s = "Alice In The Abys";
-        txt.text = "Trouve la réponse";
+        txt.text = "Aide: Chaques mots commence par une majuscule";
         IfGetFocus();
+    }
+
+    IEnumerator WaitOneFrame(float t) 
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("Indice1");
     }
 
     public void Validation()
@@ -34,11 +42,14 @@ public class Réponse : MonoBehaviour
         {
             txt.text = "Bravo tu as trouvé !!!";
             endGame = true;
-            SceneManager.LoadScene(1);
+            Panel.SetActive(true);
+            Panel.GetComponentInChildren<Text>().text = "Bravo ! Tu obtiens l'indice";
+            StartCoroutine(WaitOneFrame(2f));
         }
         else 
         {
-            txt.text = "Réessaye, indice: chaque mot commence par une majuscule";
+            Panel.SetActive(true);
+            Panel.GetComponentInChildren<Text>().text = "Dommage tu as echoué";
         }
 
         IfGetFocus();
