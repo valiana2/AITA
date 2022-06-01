@@ -1,1 +1,8 @@
+<<<<<<< Updated upstream
 Toutes_Les_Maps.unitypackage filter=lfs diff=lfs merge=lfs -text
+=======
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+AITA/** filter=lfs diff=lfs merge=lfs -text
+AITA filter=lfs diff=lfs merge=lfs -text
+>>>>>>> Stashed changes
