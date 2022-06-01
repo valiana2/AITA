@@ -7,17 +7,16 @@ using UnityEngine.UI;
 
 public class DialogueMana : MonoBehaviour
 {
-    private Text nameText;
-    private Text dialogueText;
-    private bool startTalking = false;
-    private Animator animator;
+    public Text nameText;
+    public Text dialogueText;
+    public bool startTalking = false;
+    public Animator animator;
 
     private Queue<string> talking;
     // Start is called before the first frame update
     void Start()
     {
         talking = new Queue<string>();
-        
     }
 
     private void Update()
@@ -28,14 +27,13 @@ public class DialogueMana : MonoBehaviour
         }
     }
 
-    public void StartDialogue (Dialogue dialogue, Text dialogue_Text, Text name_Text, Animator _animator)
+    public void StartDialogue (Dialogue dialogue)
     {
         if (startTalking)
             return;
+        Debug.Log("commence");
         animator.SetBool("isOpen", true);
-        dialogueText = dialogue_Text;
-        nameText = name_Text;
-        animator = _animator;
+
         nameText.text = dialogue.name;
         talking.Clear();
 
@@ -44,6 +42,7 @@ public class DialogueMana : MonoBehaviour
             talking.Enqueue(sentence);
         }
         startTalking = true;
+        DisplayNextSentence();
     }
     
     // main function and called by the button
@@ -51,10 +50,12 @@ public class DialogueMana : MonoBehaviour
     {
         if (talking.Count == 0)
         {
-            EndDialogue();
+            Debug.Log("test");
+            StartCoroutine(EndDialogue());
             return;
         }
         string sentence = talking.Dequeue();
+        Debug.Log(sentence + "test");
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -69,9 +70,10 @@ public class DialogueMana : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    IEnumerator EndDialogue()
     {
         animator.SetBool("isOpen", false);
+        yield return new WaitForSeconds(0.1f);
         startTalking = false;
     }
 }

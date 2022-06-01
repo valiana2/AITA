@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 //fonction qui fait poursuivre le joueur s'il est trop près de l'ennemi
-public class IADeplacements : MonoBehaviour
+public class IADeplacements : Fighter
 {
     //attributs de Patrol()
     
@@ -18,7 +18,29 @@ public class IADeplacements : MonoBehaviour
     public Transform player;
     public Transform enemy;
     public float chaseDistance;
+    
+    // attributs de combat system
+    private bool chasing;
+    private bool collidingWithPlayer;
+    protected BoxCollider2D boxCollider;
+    private Vector2 startingPosition;
 
+    //fonctions combat system
+    
+    // Hitbox
+    private BoxCollider2D hitbox;
+    private Collider2D[] hits = new Collider2D[10];
+
+    protected void Start()
+    {
+        boxCollider = GetComponent<BoxCollider2D>();
+        startingPosition.x = left;
+        startingPosition.y = right;
+        hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+    }
+
+    //fonctions deplacements
+    
     // fonction Patrol
     public void Patrol()
     {
@@ -62,16 +84,21 @@ public class IADeplacements : MonoBehaviour
     /* A rajouter: faire une fonction qui chande de direction si npc rencontre collider
      private void OnCollisionEnter*/
     
-    /*public void Chase(player)
+    public void Chase(Transform player)
     {
-        
-    }*/
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+    }
 
     void Update()
     {
         if (Vector2.Distance(enemy.position, player.position) < chaseDistance)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            Chase(player);
+            chasing = true;
+            /*if ()
+            {
+                
+            }*/
         }
         else
         {

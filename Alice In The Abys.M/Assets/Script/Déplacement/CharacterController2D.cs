@@ -10,7 +10,7 @@ namespace RPGM.Gameplay
     /// <summary>
     /// A simple controller for animating a 4 directional sprite using Physics.
     /// </summary>
-    public class CharacterController2D : MonoBehaviour
+    public class CharacterController2D : Fighter//MonoBehaviour
     {
         public float speed = 1;
         public float acceleration = 2;

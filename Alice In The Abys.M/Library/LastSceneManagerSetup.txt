@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Mini jeux/Pendu.unity
+- path: Assets/Scenes/MarieChangeScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

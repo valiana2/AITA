@@ -6,10 +6,7 @@ using UnityEngine.UI;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-
-    public Text nameText;
-    public Text dialogueText;
-    public Animator animator;
+    
     public bool isInRange;
 
     void Update()
@@ -40,7 +37,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueMana>().StartDialogue(dialogue,dialogueText, nameText, animator);
+        //FindObjectOfType<DialogueMana>().StartDialogue(dialogue);
+        this.GetComponent<DialogueMana>().StartDialogue(dialogue);
     }
 
 
