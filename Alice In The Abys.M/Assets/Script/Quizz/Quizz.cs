@@ -27,8 +27,8 @@ public class Quizz : MonoBehaviour
         TxtBtnG = GameObject.Find("Réponse1").GetComponent<TextMesh>();
         TxtBtnD = GameObject.Find("Réponse2").GetComponent<TextMesh>();
         Quiz[0] = "Comment s'apelle le lapin à sauver ?,Gribouille,Magouille,Gribouille";
-        Quiz[1] = "Comment s'apelle la personne qui vous as guider jusqu'au jeu ?,Dumbo,Mytho,Mytho";
-        Quiz[2] = "Combien de personnes as tu rencontrer jusqu'ici ?,2,3,3";
+        Quiz[1] = "Comment s'apelle la personne qui vous as guider jusqu'au jeu ?,Angus,Brabus,Angus";
+        Quiz[2] = "Combien de personnes as tu rencontrer jusqu'ici ?,3,4,4";
 
         PoseUneQuestion();
     }
