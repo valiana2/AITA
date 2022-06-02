@@ -19,15 +19,15 @@ public class Timer : MonoBehaviour
 
     void Awake() 
     {
-        time = (int)Time.time;
+        time = 0;
         tick = TimerInterval;
     }
 
     void Update()
     {
         GetComponent<Text>().text = "Time: " + string.Format("{0:0}:{1:00}",Mathf.Floor(time/60),time%60);
-        time = (int)Time.time;
-        if(time == 15f)
+        time += Time.deltaTime;
+        if(time >= 15f)
         {
             if(GameControl.score == 50)
             {

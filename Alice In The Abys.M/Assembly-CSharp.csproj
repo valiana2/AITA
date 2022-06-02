@@ -46,6 +46,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\ImportDécor\Scripts\Gameplay\GameModel.cs" />
      <Compile Include="Assets\Script\Menu\Menu.cs" />
+     <Compile Include="Assets\Othmane\Scripts Othmane\Teleporter.cs" />
      <Compile Include="Assets\ImportDécor\Scripts\Core\HeapQueue.cs" />
      <Compile Include="Assets\Script\Fish\Timer.cs" />
      <Compile Include="Assets\Script\Chargement\SwitchScene.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Script\Menu\VolumeSlider.cs" />
+     <Compile Include="Assets\Othmane\Scripts Othmane\Chest.cs" />
      <Compile Include="Assets\Script\Déplacement\GameController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Script\AccestoGame\SwitchScenee.cs" />
@@ -76,6 +78,7 @@
      <Compile Include="Assets\Script\Puzzle\Réponse.cs" />
      <Compile Include="Assets\Othmane\Scripts Othmane\Player.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Othmane\Scripts Othmane\Collectable.cs" />
      <Compile Include="Assets\Script\Fish\PlayerFish1.cs" />
      <Compile Include="Assets\Lisa\scriptsLisa\HealthBar.cs" />
      <Compile Include="Assets\Lisa\scriptsLisa\script NPC\DialogueTrigger.cs" />
@@ -112,9 +115,6 @@
      <Compile Include="Assets\Script\Chargement\LevelLoader.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\Othmane\Scripts Othmane\Chest.cs" />
-     <Compile Include="Assets\Othmane\Scripts Othmane\Collectable.cs" />
-     <Compile Include="Assets\Othmane\Scripts Othmane\Teleporter.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ImportDécor\Shaders\Cutscene.shader" />

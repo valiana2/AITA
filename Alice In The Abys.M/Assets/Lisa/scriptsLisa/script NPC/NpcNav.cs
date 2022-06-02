@@ -15,6 +15,7 @@ public class NpcNav : MonoBehaviour
     private bool goright;
     private int nbFrame;
     private int distance;
+    public float speed2 = 100f;
 
     void Start()
     {
@@ -37,7 +38,10 @@ public class NpcNav : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = true;
-            //animator.SetBool("isTalking", true);
+            animator.SetBool("isTalking", true);
+             animator.SetBool("goRight", false);
+              animator.SetBool("goLeft", false);
+
         }
     }
 
@@ -46,7 +50,7 @@ public class NpcNav : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = false;
-            //animator.SetBool("isTalking", false);
+            animator.SetBool("isTalking", false);
         }
     }
 
@@ -59,8 +63,9 @@ public class NpcNav : MonoBehaviour
             {
                 if (goright)
                 {
-                    //animator.SetBool("goLeft", false);
-                    transform.position = transform.position + new Vector3(0.1f, 0, 0);
+                    Debug.Log("ok");
+                    animator.SetBool("goRight", true);
+                    transform.position = transform.position + new Vector3(1f, 0, 0)*Time.deltaTime*speed2;
                     if (nbFrame >= distance)
                     {
                         goright = false;
@@ -74,8 +79,9 @@ public class NpcNav : MonoBehaviour
                 }
                 else
                 {
-                    //animator.SetBool("goLeft", true);
-                    transform.position = transform.position + new Vector3(-0.1f, 0, 0);
+                    Debug.Log("ko");
+                    animator.SetBool("goLeft", true);
+                    transform.position = transform.position - new Vector3(1f, 0, 0)*Time.deltaTime*speed2;
                     if (nbFrame >= distance)
                     {
                         goright = true;
