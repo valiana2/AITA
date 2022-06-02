@@ -59,12 +59,12 @@ public class NpcNav : MonoBehaviour
     {
         if (!isInRange)
         {
-            if (nbFrame % 50 == 0)
-            {
+            
                 if (goright)
                 {
                     Debug.Log("ok");
                     animator.SetBool("goRight", true);
+                    animator.SetBool("goLeft", false);
                     transform.position = transform.position + new Vector3(1f, 0, 0)*Time.deltaTime*speed2;
                     if (nbFrame >= distance)
                     {
@@ -81,6 +81,7 @@ public class NpcNav : MonoBehaviour
                 {
                     Debug.Log("ko");
                     animator.SetBool("goLeft", true);
+                    animator.SetBool("goRight", false);
                     transform.position = transform.position - new Vector3(1f, 0, 0)*Time.deltaTime*speed2;
                     if (nbFrame >= distance)
                     {
@@ -92,8 +93,8 @@ public class NpcNav : MonoBehaviour
                         nbFrame++;
                     }
                 }
-            }
-            else { nbFrame++; }
+                nbFrame++;
+            
         }
         
     }

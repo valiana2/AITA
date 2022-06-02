@@ -30,7 +30,13 @@ public class Réponse : MonoBehaviour
     IEnumerator WaitOneFrame(float t) 
     {
         yield return new WaitForSeconds(t);
-        SceneManager.LoadScene("Indice1");
+        SceneManager.LoadScene("Indice4");
+    }
+
+    IEnumerator WaitOneFrame2(float t) 
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("Forest");
     }
 
     public void Validation()
@@ -49,7 +55,8 @@ public class Réponse : MonoBehaviour
         else 
         {
             Panel.SetActive(true);
-            Panel.GetComponentInChildren<Text>().text = "Dommage tu as echoué";
+            Panel.GetComponentInChildren<Text>().text = "Dommage tu as echoué, recommence !!";
+            StartCoroutine(WaitOneFrame2(2f));
         }
 
         IfGetFocus();

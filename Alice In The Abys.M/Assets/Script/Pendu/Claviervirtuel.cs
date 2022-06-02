@@ -25,6 +25,11 @@ public class Claviervirtuel : MonoBehaviour
         yield return new WaitForSeconds(t);
         SceneManager.LoadScene("Indice3");
     }
+    IEnumerator WaitOneFrame2(float t) 
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("Forest");
+    }
 
     private void Awake() 
     {
@@ -90,6 +95,7 @@ public class Claviervirtuel : MonoBehaviour
             {
                 PanelEnd.SetActive(true);
                 PanelEnd.GetComponentInChildren<Text>().text = "Dommage ! le mot était " + curWord;
+                  StartCoroutine(WaitOneFrame2(2f));
             }
         }
     }

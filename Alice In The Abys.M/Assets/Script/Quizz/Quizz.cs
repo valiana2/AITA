@@ -45,6 +45,12 @@ public class Quizz : MonoBehaviour
         SceneManager.LoadScene("Indice1");
     }
 
+    IEnumerator WaitOneFrame2(float t) 
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("MarieChangeScene");
+    }
+
     public void PoseUneQuestion()
     {
         if(NbQuestion <= Total)
@@ -71,6 +77,7 @@ public class Quizz : MonoBehaviour
             {
                 Panel.SetActive(true);
                 Panel.GetComponentInChildren<Text>().text = "Dommage tu as échoué";
+                StartCoroutine(WaitOneFrame2(2f));
             }
         }
        

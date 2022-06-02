@@ -17,6 +17,12 @@ public class Timer : MonoBehaviour
         SceneManager.LoadScene("Indice3");
     }
 
+     IEnumerator WaitOneFrame2(float t) 
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene("Lake");
+    }
+
     void Awake() 
     {
         time = 0;
@@ -37,8 +43,9 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                 PanelEnd.SetActive(true);
+                PanelEnd.SetActive(true);
                 PanelEnd.GetComponentInChildren<Text>().text = "Dommage tu as echoué";
+                StartCoroutine(WaitOneFrame2(2f));
             }
         }
     }

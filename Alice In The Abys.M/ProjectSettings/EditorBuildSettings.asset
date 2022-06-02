@@ -86,4 +86,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mini jeux/FishGame.unity
     guid: aa6c5bd4aef933841b278510e73e8acf
+  - enabled: 1
+    path: Assets/Scenes/Indices/Indice4.unity
+    guid: aae71d95f23e40e449f84b00a13bf092
   m_configObjects: {}

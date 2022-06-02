@@ -19,7 +19,7 @@ public class LevelLoader1 : MonoBehaviour
     IEnumerator LoadAsync()
     {
         yield return new WaitForSeconds(1f);
-        AsyncOperation operation = SceneManager.LoadSceneAsync("MainGame");
+        AsyncOperation operation = SceneManager.LoadSceneAsync("MarieChangeScene");
 
         while (!operation.isDone)
         {

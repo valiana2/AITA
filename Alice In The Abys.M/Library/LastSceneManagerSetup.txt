@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MarieChangeScene.unity
+- path: Assets/Scenes/Indices/Indice5.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
