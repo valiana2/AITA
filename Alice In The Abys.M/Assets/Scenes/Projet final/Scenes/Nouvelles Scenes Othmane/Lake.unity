@@ -2360,7 +2360,7 @@ PrefabInstance:
       objectReference: {fileID: 1380906679}
     - target: {fileID: 3567832501352292447, guid: 01ce3f49eaabd134a854736d0b469ddb, type: 3}
       propertyPath: position1.x
-      value: -7.7
+      value: -7.98
       objectReference: {fileID: 0}
     - target: {fileID: 3567832501352292447, guid: 01ce3f49eaabd134a854736d0b469ddb, type: 3}
       propertyPath: position1.y
@@ -3412,11 +3412,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1318976432026030871, guid: d96c0846c7d644f72bfbf301de1def5c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.16
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1318976432026030871, guid: d96c0846c7d644f72bfbf301de1def5c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.68
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 1318976432026030871, guid: d96c0846c7d644f72bfbf301de1def5c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3537,7 +3537,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2746279, g: 0.4528302, b: 0.21957992, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3842,11 +3842,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8171158353334016013, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.99
+      value: -17.25
       objectReference: {fileID: 0}
     - target: {fileID: 8171158353334016013, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.77
+      value: 1.8100002
       objectReference: {fileID: 0}
     - target: {fileID: 8171158353334016013, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42673,7 +42673,7 @@ PrefabInstance:
     - target: {fileID: 3567832501352292419, guid: 01ce3f49eaabd134a854736d0b469ddb, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
       value: "O\xF9 se trouve la f\xF4ret ? Ahh d\xE9sol\xE9 je n'en ai aucunes id\xE9e
-        masi je connais quelqu'un qui as ta r\xE9ponse."
+        mais je connais quelqu'un qui as ta r\xE9ponse."
       objectReference: {fileID: 0}
     - target: {fileID: 3567832501352292419, guid: 01ce3f49eaabd134a854736d0b469ddb, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]

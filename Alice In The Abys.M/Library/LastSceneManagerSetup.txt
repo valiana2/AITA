@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Indices/Indice5.unity
+- path: Assets/Scenes/Projet final/Scenes/Nouvelles Scenes Othmane/Forest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

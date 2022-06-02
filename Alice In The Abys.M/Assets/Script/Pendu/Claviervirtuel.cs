@@ -23,7 +23,7 @@ public class Claviervirtuel : MonoBehaviour
     IEnumerator WaitOneFrame(float t) 
     {
         yield return new WaitForSeconds(t);
-        SceneManager.LoadScene("Indice3");
+        SceneManager.LoadScene("Indice5");
     }
     IEnumerator WaitOneFrame2(float t) 
     {

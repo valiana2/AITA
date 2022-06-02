@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
         time += Time.deltaTime;
         if(time >= 15f)
         {
-            if(GameControl.score == 50)
+            if(GameControl.score >= 50)
             {
                 PanelEnd.SetActive(true);
                 PanelEnd.GetComponentInChildren<Text>().text = "Bravo ! Tu obtiens l'indice";

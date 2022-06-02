@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac29312e57fe2244869a253f0ab22fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 0.08
+  playerSpeed: 0.05
   gameController: {fileID: 1688213884}
   SfxCorrect: {fileID: 8300000, guid: 8ddcd9397ea25714790a8b1dba18041c, type: 3}
 --- !u!212 &962327407

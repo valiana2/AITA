@@ -365,8 +365,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Retourne dans le village en te dirigeant par l\xE0 o\xF9 tu es arriv\xE9.
-    Ainsi tu pourra trouver Angus le taureau pr\xE8s de la fontaine (direction Ouest)."
+  m_text: "Retourne dans le village. Ainsi tu pourra trouver Angus le taureau pr\xE8s
+    de la fontaine (direction Ouest)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Deuxi\xE8me indice"
+  m_text: Premier indice
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4422fd8cf2666b84386346b5283ad2a7, type: 2}
   m_sharedMaterial: {fileID: 21040265067069690, guid: 4422fd8cf2666b84386346b5283ad2a7, type: 2}

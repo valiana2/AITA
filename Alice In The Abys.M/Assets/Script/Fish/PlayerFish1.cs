@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerFish1 : MonoBehaviour
 {
-    public float playerSpeed = 0.20f;
+    public float playerSpeed;
     private float lastXPosition;
     public GameObject gameController;
     public AudioClip SfxCorrect;
